@@ -10,6 +10,19 @@ namespace LeadtoCustomer.Controller
     public class LeadController : ControllerBase
     {
 
+        [HttpDelete("{id}")]
+
+        public void Delete(int id, [FromBody] LeadModel lead)
+        {
+            lead.Id = id;
+
+            LeadsModel.DeleteLead(lead);
+           
+        }
+
+
+
+
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] LeadModel lead)
         {

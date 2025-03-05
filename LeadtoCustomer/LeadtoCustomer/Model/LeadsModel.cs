@@ -166,6 +166,21 @@ namespace LeadtoCustomer.Model
                 }
             }
         }
+        public static  void DeleteLead(LeadModel lead)
+        {
+            using (var con = new SqlConnection(Database.CONNECTION_STRING))
+            {
+                con.Open();
+                var sql =
+                    "DELETE FROM Leads WHERE Id = @Id";  // Dein SQL Befehl
+
+                using (var cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@Id", lead.Id);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
 
 
     }
