@@ -37,3 +37,43 @@ C:\LBordner\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\refint\LeadtoCustomer
 C:\LBordner\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.pdb
 C:\LBordner\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.genruntimeconfig.cache
 C:\LBordner\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\ref\LeadtoCustomer.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.csproj.AssemblyReference.cache
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.GeneratedMSBuildEditorConfig.editorconfig
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.AssemblyInfoInputs.cache
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.AssemblyInfo.cs
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.csproj.CoreCompileInputs.cache
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.MvcApplicationPartsAssemblyInfo.cs
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.MvcApplicationPartsAssemblyInfo.cache
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.sourcelink.json
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\refint\LeadtoCustomer.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.pdb
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\appsettings.Development.json
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\appsettings.json
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\LeadtoCustomer.exe
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\LeadtoCustomer.deps.json
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\LeadtoCustomer.runtimeconfig.json
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\LeadtoCustomer.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\LeadtoCustomer.pdb
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\staticwebassets.build.json
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\staticwebassets.development.json
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\staticwebassets\msbuild.LeadtoCustomer.Microsoft.AspNetCore.StaticWebAssets.props
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\staticwebassets\msbuild.build.LeadtoCustomer.props
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LeadtoCustomer.props
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LeadtoCustomer.props
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\staticwebassets.pack.json
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\scopedcss\bundle\LeadtoCustomer.styles.css
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCu.A98DAEEF.Up2Date
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.genruntimeconfig.cache
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\ref\LeadtoCustomer.dll

@@ -5,7 +5,7 @@ namespace LeadtoCustomer
 {
     internal class Database
     {
-        public static readonly string DATABASE_NAME = @"LegertoCustomer";
+        public static readonly string DATABASE_NAME = @"LeadtoCustomer";
         public static readonly string MASTER_CONNECTION_STRING = @"Server=LAPTOP-TSP1Q2RF\SQLEXPRESS; Integrated Security=True;";
         public static readonly string CONNECTION_STRING = $@"Server=LAPTOP-TSP1Q2RF\SQLEXPRESS; Database={DATABASE_NAME}; Integrated Security = True;";
 
@@ -23,14 +23,14 @@ namespace LeadtoCustomer
 
         private static void CreateTablesIfNotExists()
         {
-            const string createLedgersDbQuery = @"IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='ledgers' and xtype='U')
+            const string createLedgersDbQuery = @"IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='leads' and xtype='U')
                 BEGIN
-                    CREATE TABLE ledgers (
+                    CREATE TABLE leads (
                         id int IDENTITY(1,1) PRIMARY KEY,
                         Name nvarchar(50) NOT NULL,
                         Gender nvarchar(50) NOT NULL,
-                        Adress nvarchar(60) NOT NULL,
-                         LederSource nvarchar (60) NOT NULL,
+                        Address nvarchar(60) NOT NULL,
+                        LeadSource nvarchar (60) NOT NULL,
                     )
                 END";
             using (var connection = new SqlConnection(CONNECTION_STRING))
@@ -47,7 +47,7 @@ namespace LeadtoCustomer
                         Name nvarchar(50) NOT NULL,
                         Gender nvarchar(50) NOT NULL,
                         Adress nvarchar(60) NOT NULL,
-                        CustomerSource nvarchar (60) NOT NULL,
+                        Customersource nvarchar (60) NOT NULL,
                     )
                 END";
             using (var connection = new SqlConnection(CONNECTION_STRING))

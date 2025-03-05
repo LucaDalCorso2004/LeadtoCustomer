@@ -627,11 +627,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\LBordner\\Neuer Ordner (2)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer.csproj",
+      "projectUniqueName": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer.csproj",
       "projectName": "LeadtoCustomer",
-      "projectPath": "C:\\LBordner\\Neuer Ordner (2)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer.csproj",
+      "projectPath": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer.csproj",
       "packagesPath": "C:\\Users\\Luca Dal Corso\\.nuget\\packages\\",
-      "outputPath": "C:\\LBordner\\Neuer Ordner (2)\\LeadtoCustomer\\LeadtoCustomer\\obj\\",
+      "outputPath": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

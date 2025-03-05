@@ -5,7 +5,7 @@ try
     Console.WriteLine("Initializing database.");
     Database.Initialize();
     Console.WriteLine("Seeding data.");
-  
+
 }
 catch (Exception ex)
 {

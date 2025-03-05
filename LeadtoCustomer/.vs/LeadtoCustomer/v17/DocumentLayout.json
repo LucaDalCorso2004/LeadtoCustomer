@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|c:\\lbordner\\neuer ordner (3)\\leadtocustomer\\leadtocustomer\\leadtocustomer\\model\\leadsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|solutionrelative:leadtocustomer\\model\\leadsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|c:\\lbordner\\neuer ordner (3)\\leadtocustomer\\leadtocustomer\\leadtocustomer\\controllers\\leadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|solutionrelative:leadtocustomer\\controllers\\leadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|c:\\lbordner\\neuer ordner (3)\\leadtocustomer\\leadtocustomer\\leadtocustomer\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|solutionrelative:leadtocustomer\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|c:\\lbordner\\neuer ordner (3)\\leadtocustomer\\leadtocustomer\\leadtocustomer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|solutionrelative:leadtocustomer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|c:\\lbordner\\neuer ordner (3)\\leadtocustomer\\leadtocustomer\\leadtocustomer\\model\\leadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C99B87C7-EBDD-46BB-80F2-F7C6FFBDFE07}|LeadtoCustomer\\LeadtoCustomer.csproj|solutionrelative:leadtocustomer\\model\\leadmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Program.cs",
+              "RelativeDocumentMoniker": "LeadtoCustomer\\Program.cs",
+              "ToolTip": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Program.cs",
+              "RelativeToolTip": "LeadtoCustomer\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:37:27.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LeadController.cs",
+              "DocumentMoniker": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Controllers\\LeadController.cs",
+              "RelativeDocumentMoniker": "LeadtoCustomer\\Controllers\\LeadController.cs",
+              "ToolTip": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Controllers\\LeadController.cs",
+              "RelativeToolTip": "LeadtoCustomer\\Controllers\\LeadController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:36:48.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Database.cs",
+              "RelativeDocumentMoniker": "LeadtoCustomer\\Database.cs",
+              "ToolTip": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Database.cs",
+              "RelativeToolTip": "LeadtoCustomer\\Database.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwBIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:36:10.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LeadModel.cs",
+              "DocumentMoniker": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Model\\LeadModel.cs",
+              "RelativeDocumentMoniker": "LeadtoCustomer\\Model\\LeadModel.cs",
+              "ToolTip": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Model\\LeadModel.cs",
+              "RelativeToolTip": "LeadtoCustomer\\Model\\LeadModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:34:00.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LeadsModel.cs",
+              "DocumentMoniker": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Model\\LeadsModel.cs",
+              "RelativeDocumentMoniker": "LeadtoCustomer\\Model\\LeadsModel.cs",
+              "ToolTip": "C:\\LBordner\\Neuer Ordner (3)\\LeadtoCustomer\\LeadtoCustomer\\LeadtoCustomer\\Model\\LeadsModel.cs",
+              "RelativeToolTip": "LeadtoCustomer\\Model\\LeadsModel.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAowKIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T08:33:47.119Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
