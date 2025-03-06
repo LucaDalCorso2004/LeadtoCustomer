@@ -12,11 +12,11 @@ namespace LeadtoCustomer.Controller
 
         [HttpDelete("{id}")]
 
-        public void Delete(int id, [FromBody] LeadModel lead)
+        public void Delete(int id)
         {
-            lead.Id = id;
+            
 
-            LeadsModel.DeleteLead(lead);
+            LeadsModel.DeleteLead(id);
            
         }
 
@@ -63,8 +63,8 @@ namespace LeadtoCustomer.Controller
 
         public IEnumerable<LeadModel> Get()
         {
-            var allLedgers = LeadsModel.GetAllLedgers();
-            return allLedgers;
+            var allLeads = LeadsModel.GetAllLeads();
+            return allLeads;
         }
 
 
@@ -85,7 +85,7 @@ namespace LeadtoCustomer.Controller
                 LeadSource = lead.LeadSource
             };
 
-            bool result = LeadsModel.CreateLedgers(leadModel);
+            bool result = LeadsModel.CreateLeads(leadModel);
 
             if (result)
             {

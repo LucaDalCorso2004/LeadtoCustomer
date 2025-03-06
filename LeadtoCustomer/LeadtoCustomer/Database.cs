@@ -46,7 +46,7 @@ namespace LeadtoCustomer
                         id int IDENTITY(1,1) PRIMARY KEY,
                         Name nvarchar(50) NOT NULL,
                         Gender nvarchar(50) NOT NULL,
-                        Adress nvarchar(60) NOT NULL,
+                        Address nvarchar(60) NOT NULL,
                         Customersource nvarchar (60) NOT NULL,
                     )
                 END";

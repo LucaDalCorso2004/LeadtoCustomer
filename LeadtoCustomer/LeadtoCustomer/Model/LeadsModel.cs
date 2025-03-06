@@ -1,11 +1,11 @@
 ﻿using System.Data.SqlClient;
 using System.Data;
-using System.Data.SqlClient;
+
 namespace LeadtoCustomer.Model
 {
     public class LeadsModel
     {
-        public static bool CreateLedgers(LeadModel lead)
+        public static bool CreateLeads(LeadModel lead)
         {
             const string query = @"INSERT INTO leads (Name, Gender, Address, LeadSource) 
                           VALUES (@Name, @Gender, @Address, @LeadSource)";
@@ -51,9 +51,9 @@ namespace LeadtoCustomer.Model
         }
 
 
-        public static IEnumerable<LeadModel> GetAllLedgers()
+        public static IEnumerable<LeadModel> GetAllLeads()
         {
-            var allLedgers = new List<LeadModel>();
+            var allleads = new List<LeadModel>();
 
             const string query = @"SELECT id, Name, Gender,Address,LeadSource  FROM leads ORDER BY id";
             bool worked;
@@ -81,7 +81,7 @@ namespace LeadtoCustomer.Model
                                         string leadsource = reader.GetString(reader.GetOrdinal("LeadSource"));
 
 
-                                        allLedgers.Add(new LeadModel { Id = id, Name = name, Gender = gender, Address = address, LeadSource = leadsource });
+                                        allleads.Add(new LeadModel { Id = id, Name = name, Gender = gender, Address = address, LeadSource = leadsource });
 
                                     }
                                 }
@@ -106,7 +106,7 @@ namespace LeadtoCustomer.Model
                     }
                 }
             } while (!worked);
-            return allLedgers;
+            return allleads;
         }
 
 
@@ -166,7 +166,7 @@ namespace LeadtoCustomer.Model
                 }
             }
         }
-        public static  void DeleteLead(LeadModel lead)
+        public static  void DeleteLead(int id)
         {
             using (var con = new SqlConnection(Database.CONNECTION_STRING))
             {
@@ -176,7 +176,7 @@ namespace LeadtoCustomer.Model
 
                 using (var cmd = new SqlCommand(sql, con))
                 {
-                    cmd.Parameters.AddWithValue("@Id", lead.Id);
+                    cmd.Parameters.AddWithValue("@Id", id);
                     cmd.ExecuteNonQuery();
                 }
             }
