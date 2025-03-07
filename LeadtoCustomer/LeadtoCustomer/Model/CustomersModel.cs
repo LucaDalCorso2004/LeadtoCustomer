@@ -143,6 +143,77 @@ namespace LeadtoCustomer.Model
                 }
             }
         }
+        public static void DeleteCustomer(int id)
+        {
+            using (var con = new SqlConnection(Database.CONNECTION_STRING))
+            {
+                con.Open();
+                var sql =
+                    "DELETE FROM customers WHERE Id = @Id";  // Dein SQL Befehl
+
+                using (var cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public static CustomerModel GetCustomerById(int id)
+        {
+            using (var con = new SqlConnection(Database.CONNECTION_STRING))
+            {
+                con.Open();
+                var sql = "SELECT * FROM customers WHERE Id = @Id"; // Dein SQL Befehl
+                using (var cmd = new SqlCommand(sql, con))
+                {
+                    cmd.Parameters.AddWithValue("@Id", id);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new CustomerModel
+                            {
+                                Id = Convert.ToInt32(reader["Id"]),
+                                Name = reader["Name"].ToString(),
+                                Gender = reader["Gender"].ToString(),
+                                Address = reader["Address"].ToString(),
+                                CustomerSource = reader["CustomerSource"].ToString()
+                            };
+                        }
+                        else
+                        {
+                            return null;
+                        }
+                    }
+                }
+            }
+
+        }
+        public static void Update(CustomerModel customer, SqlConnection conn, SqlTransaction transaction)
+        {
+            const string query = "UPDATE customers SET Name=@Name, Gender=@Gender, Address =@Address , CustomerSource=@CustomerSource  WHERE id=@Id";
+            using (var cmd = new SqlCommand(query, conn, transaction))
+            {
+                cmd.Parameters.AddWithValue("@Name", customer.Name);
+                cmd.Parameters.AddWithValue("@Gender", customer.Gender);
+                cmd.Parameters.AddWithValue("@Id", customer.Id);
+                cmd.Parameters.AddWithValue("@Address", customer.Address);
+                cmd.Parameters.AddWithValue("@CustomerSource", customer.CustomerSource);
+
+                // Execute the command
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public static void Update(CustomerModel customer)
+        {
+            using (SqlConnection conn = new SqlConnection(Database.CONNECTION_STRING))
+            {
+                conn.Open();
+                Update(customer, conn, null);
+            }
+
+        }
     }
 }
 

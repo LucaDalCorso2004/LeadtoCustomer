@@ -127,16 +127,16 @@ namespace LeadtoCustomer.Model
             }
         }
 
-        public static void Update(LeadModel ledger)
+        public static void Update(LeadModel lead)
         {
             using (SqlConnection conn = new SqlConnection(Database.CONNECTION_STRING))
             {
                 conn.Open();
-                Update(ledger, conn, null);
+                Update(lead, conn, null);
             }
 
         }
-        public static LeadModel GetById(int id)
+        public static LeadModel GetLeadById(int id)
         {
             using (var con = new SqlConnection(Database.CONNECTION_STRING))
             {

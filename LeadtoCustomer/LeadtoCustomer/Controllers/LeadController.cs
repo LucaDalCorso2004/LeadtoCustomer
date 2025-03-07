@@ -28,7 +28,7 @@ namespace LeadtoCustomer.Controller
         {
             lead.Id = id;
 
-            var existinglead = LeadsModel.GetById(id);
+            var existinglead = LeadsModel.GetLeadById(id);
             if (existinglead == null)
             {
                 return NotFound("Lead not found");

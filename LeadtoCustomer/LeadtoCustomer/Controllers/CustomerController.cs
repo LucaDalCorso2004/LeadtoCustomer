@@ -42,6 +42,51 @@ namespace LeadtoCustomer.Controllers
             // Erfolgreich, gebe eine Bestätigung zurück
             return Ok("Lead was successfully converted to Customer and deleted from Leads");
         }
+        [HttpDelete("{id}")]
+
+        public void Delete(int id)
+        {
+
+
+       CustomersModel.DeleteCustomer(id);
+
+        }
+
+
+
+
+        [HttpPut("{id}")]
+        public IActionResult Put(int id, [FromBody] CustomerModel customer)
+        {
+            customer.Id = id;
+
+            var existingcustomer = CustomersModel.GetCustomerById(id);
+            if (existingcustomer == null)
+            {
+                return NotFound("Lead not found");
+            }
+
+            foreach (var prop in typeof(CustomerModel).GetProperties())
+            {
+                var newValue = prop.GetValue(customer);
+                var oldValue = prop.GetValue(existingcustomer);
+
+                if (newValue != null && newValue.ToString().ToLower() == "string")
+                {
+
+                    prop.SetValue(customer, oldValue);
+                }
+                else if (newValue != null)
+                {
+
+                    prop.SetValue(existingcustomer, newValue);
+                }
+            }
+
+            CustomersModel.Update(existingcustomer);
+            return Ok(existingcustomer);
+        }
+
 
 
 
