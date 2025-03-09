@@ -17,7 +17,8 @@ namespace LeadtoCustomer.Controller
             
 
             LeadsModel.DeleteLead(id);
-           
+             NoContent();
+
         }
 
 

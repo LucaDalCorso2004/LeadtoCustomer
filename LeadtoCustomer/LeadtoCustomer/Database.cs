@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using LeadtoCustomer.Model;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace LeadtoCustomer
@@ -23,7 +24,7 @@ namespace LeadtoCustomer
 
         private static void CreateTablesIfNotExists()
         {
-            const string createLedgersDbQuery = @"IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='leads' and xtype='U')
+            const string createLeadsDbQuery = @"IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='leads' and xtype='U')
                 BEGIN
                     CREATE TABLE leads (
                         id int IDENTITY(1,1) PRIMARY KEY,
@@ -35,12 +36,12 @@ namespace LeadtoCustomer
                 END";
             using (var connection = new SqlConnection(CONNECTION_STRING))
             {
-                var command = new SqlCommand(createLedgersDbQuery, connection);
+                var command = new SqlCommand(createLeadsDbQuery, connection);
                 command.Connection.Open();
                 command.ExecuteNonQuery();
             }
 
-            const string createUsersDbQuery = @"IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='customers' and xtype='U')
+            const string createCustomersDbQuery = @"IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='customers' and xtype='U')
                 BEGIN
                     CREATE TABLE customers (
                         id int IDENTITY(1,1) PRIMARY KEY,
@@ -50,12 +51,30 @@ namespace LeadtoCustomer
                         Customersource nvarchar (60) NOT NULL,
                     )
                 END";
+
+
+            using (var connection = new SqlConnection(CONNECTION_STRING))
+            {
+                var command = new SqlCommand(createCustomersDbQuery, connection);
+                command.Connection.Open();
+                command.ExecuteNonQuery();
+            }
+            const string createUsersDbQuery = @"IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='users' and xtype='U')
+                BEGIN
+                    CREATE TABLE users (
+                        id int IDENTITY(1,1) PRIMARY KEY,
+                        username nvarchar(50) NOT NULL,
+                        role nvarchar(50) NOT NULL,
+                        password_hash nvarchar(60) NOT NULL
+                    )
+                END";
             using (var connection = new SqlConnection(CONNECTION_STRING))
             {
                 var command = new SqlCommand(createUsersDbQuery, connection);
                 command.Connection.Open();
                 command.ExecuteNonQuery();
             }
+       
         }
 
         public static void Initialize()
@@ -81,7 +100,62 @@ namespace LeadtoCustomer
             return count == 0;
         }
 
+        private static void SeedUsers()
+        {
+            if (!IsEmpty("users"))
+            {
+                return;
+            }
 
+      
+
+            var seedUsers = new List<Dictionary<string, string>>
+            {
+                new Dictionary<string, string>
+                    {
+                        { "username", "admin" },
+                        { "password_hash", UsersModel.HashAndSaltPassword("adminpass") },
+                        { "role", Roles.Administrators.ToString() }
+                },
+                new Dictionary<string, string>
+                    {
+                        { "username", "editor" },
+                        { "password_hash", UsersModel.HashAndSaltPassword("Editorpass") },
+                        { "role", Roles.Editor.ToString() }
+                },
+                  new Dictionary<string, string>
+                    {
+                        { "username", "Viewer" },
+                        { "password_hash", UsersModel.HashAndSaltPassword("Viewerpass") },
+                        { "role", Roles.Viewer.ToString() }
+                },
+            };
+
+            using (SqlConnection conn = new SqlConnection(CONNECTION_STRING))
+            {
+                conn.Open();
+
+                foreach (var data in seedUsers)
+                {
+                    const string query = "INSERT INTO users (username, password_hash, role) VALUES (@Username, @PasswordHash, @Role)";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Username", data["username"]);
+                        cmd.Parameters.AddWithValue("@PasswordHash", data["password_hash"]);
+                        cmd.Parameters.AddWithValue("@Role", data["role"]);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+
+
+        public static void Seed()
+        {
+           
+            SeedUsers();
+        }
 
 
 

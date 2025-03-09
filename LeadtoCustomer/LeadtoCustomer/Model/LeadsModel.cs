@@ -122,7 +122,8 @@ namespace LeadtoCustomer.Model
                 cmd.Parameters.AddWithValue("@Address", lead.Address);
                 cmd.Parameters.AddWithValue("@LeadSource", lead.LeadSource);
 
-                // Execute the command
+             
+
                 cmd.ExecuteNonQuery();
             }
         }
@@ -141,7 +142,7 @@ namespace LeadtoCustomer.Model
             using (var con = new SqlConnection(Database.CONNECTION_STRING))
             {
                 con.Open();
-                var sql = "SELECT * FROM leads WHERE Id = @Id"; // Dein SQL Befehl
+                var sql = "SELECT * FROM leads WHERE Id = @Id";
                 using (var cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@Id", id);
@@ -172,7 +173,7 @@ namespace LeadtoCustomer.Model
             {
                 con.Open();
                 var sql =
-                    "DELETE FROM Leads WHERE Id = @Id";  // Dein SQL Befehl
+                    "DELETE FROM Leads WHERE Id = @Id";  
 
                 using (var cmd = new SqlCommand(sql, con))
                 {

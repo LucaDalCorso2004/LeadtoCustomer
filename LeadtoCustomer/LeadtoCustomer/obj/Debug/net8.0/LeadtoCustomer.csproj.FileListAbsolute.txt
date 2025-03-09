@@ -77,3 +77,16 @@ C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\De
 C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCu.A98DAEEF.Up2Date
 C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\LeadtoCustomer.genruntimeconfig.cache
 C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\obj\Debug\net8.0\ref\LeadtoCustomer.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\LBordner\Neuer Ordner (3)\LeadtoCustomer\LeadtoCustomer\LeadtoCustomer\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

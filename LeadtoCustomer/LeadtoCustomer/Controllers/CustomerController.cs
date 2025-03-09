@@ -1,4 +1,5 @@
 ﻿using LeadtoCustomer.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
@@ -8,9 +9,9 @@ namespace LeadtoCustomer.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-    
-       
 
+
+        [Authorize(Roles = "Administrators,Editor,Viewer")]
         [HttpGet]
             public IEnumerable<CustomerModel> Get()
         {
@@ -18,14 +19,13 @@ namespace LeadtoCustomer.Controllers
             return allCustomers;
         }
 
+        [Authorize(Roles = "Administrators")]
         [HttpPost("{id}")]
         public IActionResult Post(int id)
         {
            
 
-       
-
-            // Erstelle Customer und überprüfe den Erfolg
+   
             bool result = CustomersModel.TransferLeadToCustomer(id);
 
             if (!result)
@@ -33,15 +33,17 @@ namespace LeadtoCustomer.Controllers
                 return StatusCode(500, "Lead could not be converted into Customer");
             }
 
-            // Wenn Customer erstellt wurde, versuche das Lead zu löschen
+         
            
              LeadsModel.DeleteLead(id);
 
          
 
-            // Erfolgreich, gebe eine Bestätigung zurück
+
             return Ok("Lead was successfully converted to Customer and deleted from Leads");
         }
+
+        [Authorize(Roles = "Administrators")]
         [HttpDelete("{id}")]
 
         public void Delete(int id)
@@ -54,7 +56,7 @@ namespace LeadtoCustomer.Controllers
 
 
 
-
+        [Authorize(Roles = "Administrators,Editor")]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] CustomerModel customer)
         {

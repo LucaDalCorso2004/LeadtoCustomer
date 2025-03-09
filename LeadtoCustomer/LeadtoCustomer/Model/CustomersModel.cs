@@ -72,7 +72,7 @@ namespace LeadtoCustomer.Model
                 return false;
             }
 
-            // 2. Lead-Daten in Customer umwandeln
+         
             CustomerModel customer = new CustomerModel
             {
                 Name = lead.Name,
@@ -81,7 +81,6 @@ namespace LeadtoCustomer.Model
                 CustomerSource = lead.LeadSource
             };
 
-            // 3. Customer in die Kunden-Datenbank einfügen
             bool isCustomerCreated = CreateCustomer(customer);
             if (!isCustomerCreated)
             {
@@ -90,15 +89,12 @@ namespace LeadtoCustomer.Model
             }
 
          
-
-            // Falls alles erfolgreich war
             return true;
         }
 
         public static LeadModel GetLeadById(int leadId)
         {
-            // Hier ein einfaches Beispiel, wie du ein Lead anhand der ID aus der Datenbank abholst.
-            // Du könntest ADO.NET, Entity Framework oder Dapper verwenden.
+            
 
             using (SqlConnection conn = new SqlConnection(Database.CONNECTION_STRING))
             {
@@ -125,7 +121,7 @@ namespace LeadtoCustomer.Model
 
         public static bool CreateCustomer(CustomerModel customer)
         {
-            // Customer in die Kunden-Datenbank einfügen
+          
             const string query = @"INSERT INTO customers (Name, Gender, Address, CustomerSource) 
                            VALUES (@Name, @Gender, @Address, @CustomerSource)";
             using (SqlConnection conn = new SqlConnection(Database.CONNECTION_STRING))
@@ -149,7 +145,7 @@ namespace LeadtoCustomer.Model
             {
                 con.Open();
                 var sql =
-                    "DELETE FROM customers WHERE Id = @Id";  // Dein SQL Befehl
+                    "DELETE FROM customers WHERE Id = @Id";  
 
                 using (var cmd = new SqlCommand(sql, con))
                 {
@@ -163,7 +159,7 @@ namespace LeadtoCustomer.Model
             using (var con = new SqlConnection(Database.CONNECTION_STRING))
             {
                 con.Open();
-                var sql = "SELECT * FROM customers WHERE Id = @Id"; // Dein SQL Befehl
+                var sql = "SELECT * FROM customers WHERE Id = @Id"; 
                 using (var cmd = new SqlCommand(sql, con))
                 {
                     cmd.Parameters.AddWithValue("@Id", id);
