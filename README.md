@@ -1,14 +1,41 @@
-##Technologie
-VS 
-MYSQL Database
+Deployment and Installation Instructions
+##1. Prerequisites
+Before you can set up the system, make sure you have the following installed:
 
-## Instructions
-1. Change in Datbase file the name of your Server ![image](https://github.com/user-attachments/assets/b931038b-4bee-4524-9d01-3f27959fae27)
-2. You find it when you started microsoft SQL Server Management Studio
-3. ![image](https://github.com/user-attachments/assets/3cc635bd-2a70-4992-9a41-5defa8783db2)
-4. Then you start the backend with click the green arrow on the Top
-5. If you want to use the Customer you need to login and put it in the box on top right
-6. ![image](https://github.com/user-attachments/assets/c8fa3ea6-de0e-4e57-9ede-26c5079c9c0b)
-7. and there you put the token like that Bearer token. The token you get if you go to login an log in with a user the user you can find in the Database.
-   
+Microsoft SQL Server (for database management)
+Microsoft SQL Server Management Studio (SSMS)
+Visual Studio (or another IDE for running the backend project)
+.NET Core SDK (if not already included with your IDE)
+##2. Database Setup
+Open the Database file and change the name of your server. You can do this in the connection string within the configuration files.
+
+To locate the file, open Microsoft SQL Server Management Studio (SSMS).
+
+Open SSMS and log in to your SQL Server.
+Find the connection string file in the project folder that specifies the server name and update it with your server's name.
+
+
+Once you’ve updated the connection string, restart the project to make sure the changes take effect.
+
+##3. Backend Setup
+After configuring the database, open the backend project in your preferred IDE (e.g., Visual Studio).
+
+Click the green arrow (or press F5) to start the backend server.
+
+##4. API Authentication and Customer Access
+To interact with the Customer functions, you need to log in and obtain a JWT token.
+
+In the top-right corner of the Swagger UI (or Postman), you’ll see an input field for the Bearer token. This is where you will paste the token.
+
+You can get the token by logging in using valid user credentials (found in the Database).
+Example token format: Bearer <your_token_here>
+
+##5. Testing the System
+After logging in and entering the token, you can now test the CRUD functionality (creating, updating, viewing, and deleting leads) through the API using Swagger UI or Postman.
+Conclusion
+With these steps, you should be able to set up, deploy, and interact with the Lead Management System. If you encounter any issues, please refer to the logs or the documentation for troubleshooting steps.
+
+##Notes:
+Ensure that your database server is running and accessible before starting the backend.
+For production environments, make sure to secure the JWT tokens and database connection.
 
