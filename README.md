@@ -35,9 +35,9 @@ Example token format: Bearer <your_token_here>
 ##5. Testing the System
 After logging in and entering the token, you can now test the CRUD functionality (creating, updating, viewing, and deleting leads) through the API using Swagger UI or Postman.
 Conclusion
-With these steps, you should be able to set up, deploy, and interact with the Lead Management System. If you encounter any issues, please refer to the logs or the documentation for troubleshooting steps.
+With these steps, you should be able to set up, deploy, and interact with the Lead Management System.
 
 ##Notes:
 Ensure that your database server is running and accessible before starting the backend.
-For production environments, make sure to secure the JWT tokens and database connection.
+
 
