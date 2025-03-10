@@ -9,6 +9,6 @@ MYSQL Database
 4. Then you start the backend with click the green arrow on the Top
 5. If you want to use the Customer you need to login and put it in the box on top right
 6. ![image](https://github.com/user-attachments/assets/c8fa3ea6-de0e-4e57-9ede-26c5079c9c0b)
-7. and there you put the token like that Bearer token
+7. and there you put the token like that Bearer token. The token you get if you go to login an log in with a user the user you can find in the Database.
    
 
