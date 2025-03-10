@@ -13,6 +13,7 @@ To locate the file, open Microsoft SQL Server Management Studio (SSMS).
 
 Open SSMS and log in to your SQL Server.
 Find the connection string file in the project folder that specifies the server name and update it with your server's name.
+![image](https://github.com/user-attachments/assets/b931038b-4bee-4524-9d01-3f27959fae27)
 
 
 Once you’ve updated the connection string, restart the project to make sure the changes take effect.
@@ -29,6 +30,7 @@ In the top-right corner of the Swagger UI (or Postman), you’ll see an input fi
 
 You can get the token by logging in using valid user credentials (found in the Database).
 Example token format: Bearer <your_token_here>
+![image](https://github.com/user-attachments/assets/c8fa3ea6-de0e-4e57-9ede-26c5079c9c0b)
 
 ##5. Testing the System
 After logging in and entering the token, you can now test the CRUD functionality (creating, updating, viewing, and deleting leads) through the API using Swagger UI or Postman.
