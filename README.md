@@ -28,7 +28,7 @@ To interact with the Customer functions, you need to log in and obtain a JWT tok
 
 In the top-right corner of the Swagger UI (or Postman), you’ll see an input field for the Bearer token. This is where you will paste the token.
 
-You can get the token by logging in using valid user credentials (found in the Database).
+You can get the token by logging in using valid user credentials (found in the Database.file).
 Example token format: Bearer <your_token_here>
 ![image](https://github.com/user-attachments/assets/c8fa3ea6-de0e-4e57-9ede-26c5079c9c0b)
 
