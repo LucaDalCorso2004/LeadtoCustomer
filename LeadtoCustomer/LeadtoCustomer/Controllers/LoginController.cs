@@ -15,6 +15,11 @@ public class LoginController : ControllerBase
         {
             IActionResult response = Unauthorized();
 
+            if(login.Password == "" && login.Username == "")
+            {
+                return StatusCode(400, "Username and password are required");
+            }
+
             UserModel user = UsersModel.Authenticate(login);
 
             if (user != null)

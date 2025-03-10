@@ -46,12 +46,10 @@ namespace LeadtoCustomer.Controllers
         [Authorize(Roles = "Administrators")]
         [HttpDelete("{id}")]
 
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
-
-
-       CustomersModel.DeleteCustomer(id);
-
+            CustomersModel.DeleteCustomer(id);
+            return NoContent(); 
         }
 
 

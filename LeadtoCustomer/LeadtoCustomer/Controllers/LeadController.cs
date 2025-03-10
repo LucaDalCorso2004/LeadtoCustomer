@@ -9,21 +9,19 @@ namespace LeadtoCustomer.Controller
     [ApiController]
     public class LeadController : ControllerBase
     {
-
+        [Authorize(Roles = "Administrators")]
         [HttpDelete("{id}")]
 
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
-            
-
-            LeadsModel.DeleteLead(id);
-             NoContent();
-
+            CustomersModel.DeleteCustomer(id);
+            return NoContent(); 
         }
 
 
 
 
+        [Authorize(Roles = "Administrators,Editor")]
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] LeadModel lead)
         {
@@ -59,7 +57,7 @@ namespace LeadtoCustomer.Controller
 
 
 
-
+        [Authorize(Roles = "Administrators,Editor,Viewer")]
         [HttpGet]
 
         public IEnumerable<LeadModel> Get()
@@ -69,7 +67,7 @@ namespace LeadtoCustomer.Controller
         }
 
 
-
+        [Authorize(Roles = "Administrators")]
         [HttpPost]
         public IActionResult Post([FromBody(EmptyBodyBehavior = EmptyBodyBehavior.Allow)] LeadModel lead)
         {
