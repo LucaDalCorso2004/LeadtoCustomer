@@ -40,4 +40,9 @@ With these steps, you should be able to set up, deploy, and interact with the Le
 ##Notes:
 Ensure that your database server is running and accessible before starting the backend.
 
+## Video Walkthrough
+
+[![description](http://img.youtube.com/vi/MtC5P71g8kQ/0.jpg)](https://youtu.be/CCF14t_QAb0)
+
+
 
